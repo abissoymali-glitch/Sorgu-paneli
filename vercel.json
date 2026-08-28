@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "sorgu.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "destination": "sorgu.py"
+    }
+  ]
+}
